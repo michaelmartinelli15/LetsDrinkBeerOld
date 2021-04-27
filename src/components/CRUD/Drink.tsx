@@ -3,6 +3,8 @@ import { Form, FormControl } from "react-bootstrap";
 import { Beer } from "../../interfaces/IBeer";
 import "../../styling/ComponentStyle.css";
 
+/* eslint-disable @typescript-eslint/no-explicit-any*/
+
 interface DrinkProps {
     beerOfInterest: Beer;
     beer: Beer[] | null;

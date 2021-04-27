@@ -20,8 +20,7 @@ afterEach(() => {
 
 test("Renders Beercules", () => {
     act(() => {
-        render(<Beercules />, container)
+        render(<Beercules />, container);
     });
     expect(screen.getByText("Beercules")).toBeInTheDocument;
 });
-

@@ -20,8 +20,7 @@ afterEach(() => {
 
 test("Renders Danger Zone", () => {
     act(() => {
-        render(<DangerZone />, container)
+        render(<DangerZone />, container);
     });
     expect(screen.getByText("Danger Zone")).toBeInTheDocument;
 });
-

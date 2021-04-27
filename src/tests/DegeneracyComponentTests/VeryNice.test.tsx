@@ -20,10 +20,9 @@ afterEach(() => {
 
 test("Renders Very Nice", () => {
     act(() => {
-        render(<VeryNice />, container)
+        render(<VeryNice />, container);
     });
     expect(screen.getByText("Very Nice")).toBeInTheDocument;
     expect(screen.getByText("Great Success")).toBeInTheDocument;
     expect(screen.getByAltText("WahWahWeeWah")).toBeInTheDocument;
 });
-

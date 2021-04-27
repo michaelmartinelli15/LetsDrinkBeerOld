@@ -20,9 +20,8 @@ afterEach(() => {
 
 test("Renders Super Soft", () => {
     act(() => {
-        render(<SuperSoft />, container)
+        render(<SuperSoft />, container);
     });
     expect(screen.getByText("Super Soft")).toBeInTheDocument;
     expect(screen.getByAltText("That just might be the softest thing you've ever said")).toBeInTheDocument;
 });
-

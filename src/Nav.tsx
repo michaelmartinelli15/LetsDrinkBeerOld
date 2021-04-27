@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Logo from "./images/snowflake.png";
 import { Navbar, Nav } from "react-bootstrap";
 
 interface NavProps {

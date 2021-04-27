@@ -21,9 +21,8 @@ afterEach(() => {
 
 test("Renders Table Breaker", () => {
     act(() => {
-        render(<TableBreaker />, container)
+        render(<TableBreaker />, container);
     });
     expect(screen.getByText("Table Breaker")).toBeInTheDocument;
     expect(screen.getByAltText("Welcome to the Bills Mafia")).toBeInTheDocument;
 });
-
