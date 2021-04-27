@@ -5,11 +5,11 @@ export const AlwaysSunny = (): JSX.Element => {
     return (
         <div className="degeneracy-level">
             <h1>Always Sunny</h1>
-            <h3>The Gang Beats Bogs</h3>
+            <h3>The Gang Beats Boggs</h3>
             <img
                 className="degeneracy-image"
                 src="https://thumbs.gfycat.com/WanOfficialKillerwhale-small.gif"
-                title="The Gang Beats Boggs"
+                alt="The Gang Beats Boggs"
             />
 
             <br />

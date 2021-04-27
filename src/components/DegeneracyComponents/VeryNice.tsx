@@ -9,7 +9,7 @@ export const VeryNice = (): JSX.Element => {
             <img
                 className="degeneracy-image"
                 src="https://productplacementblog.com/wp-content/uploads/2020/10/Bud-Light-Beer-in-Borat-2006-Movie-1.jpg"
-                title="WahWahWeeWah"
+                alt="WahWahWeeWah"
             />
         </div>
     );

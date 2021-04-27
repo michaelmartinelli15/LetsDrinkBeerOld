@@ -10,7 +10,7 @@ export const Bluto = (): JSX.Element => {
             <img
                 className="degeneracy-image"
                 src="https://i.pinimg.com/originals/07/e3/fd/07e3fd9588e7d86d84f9395052a7e1fa.jpg"
-                title="Welcome to the Animal House"
+                alt="Welcome to the Animal House"
             />
         </div>
     );
