@@ -29,7 +29,10 @@ test("Renders Drink Screen", () => {
         TotalDrank: 0,
     };
     act(() => {
-        render(<Drink beerOfInterest={testBeer} beer={null} setBeer={null} beerCount={420} setBeerCount={null} />, container);
+        render(
+            <Drink beerOfInterest={testBeer} beer={null} setBeer={null} beerCount={420} setBeerCount={null} />,
+            container,
+        );
     });
     expect(screen.getByText("Lets Pound Some Test Beer")).toBeInTheDocument;
     expect(screen.getByText("How many brews?")).toBeInTheDocument;

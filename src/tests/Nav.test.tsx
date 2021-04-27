@@ -27,20 +27,20 @@ test("Renders Lets Drink Beer", () => {
 
 test("Renders Degeneracy Level", () => {
     act(() => {
-        render(<Nav degeneracyLevel="test" beerCount={69} />, container)
+        render(<Nav degeneracyLevel="test" beerCount={69} />, container);
     });
 
-    let text = screen.getByTestId("degeneracy-text");
+    const text = screen.getByTestId("degeneracy-text");
 
     expect(text).toHaveTextContent("Degeneracy Level: test");
 });
 
 test("Renders Lifetime Beer Count", () => {
     act(() => {
-        render(<Nav degeneracyLevel="test" beerCount={69} />, container)
+        render(<Nav degeneracyLevel="test" beerCount={69} />, container);
     });
 
-    let text = screen.getByTestId("degeneracy-text");
+    const text = screen.getByTestId("degeneracy-text");
 
     expect(text).toHaveTextContent("Lifetime Beer Count: 69");
 });

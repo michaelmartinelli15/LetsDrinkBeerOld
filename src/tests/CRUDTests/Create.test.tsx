@@ -19,7 +19,6 @@ afterEach(() => {
 });
 
 test("Renders Create Screen", () => {
-
     act(() => {
         render(<Create beer={null} setBeer={null} />, container);
     });
