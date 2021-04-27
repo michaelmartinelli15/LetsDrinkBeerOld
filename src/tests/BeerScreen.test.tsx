@@ -1,5 +1,5 @@
 import React from "react";
-import { render, act, screen, queryByAttribute } from "@testing-library/react";
+import { render, act, screen } from "@testing-library/react";
 import { unmountComponentAtNode } from "react-dom";
 import { BeerScreen } from "../components/BeerScreen";
 
@@ -20,7 +20,7 @@ afterEach(() => {
 
 test("Renders Title (Beers)", () => {
     act(() => {
-        render(<BeerScreen TableProps={null} />, container)
+        render(<BeerScreen TableProps={null} />, container);
     });
     expect(screen.getByText("Beers")).toBeInTheDocument;
 });

@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.ts{,x}",
     "typescript": "tsc --noEmit",
@@ -60,6 +60,5 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "gh-pages": "^3.1.0",
     "prettier": "^2.2.1"
-  },
-  "homepage": "http://thesnowpass.com"
+  }
 }

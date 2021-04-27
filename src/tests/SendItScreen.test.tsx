@@ -1,5 +1,5 @@
 import React from "react";
-import { render, act, screen, queryByAttribute } from "@testing-library/react";
+import { render, act, screen } from "@testing-library/react";
 import { unmountComponentAtNode } from "react-dom";
 import { SendItScreen } from "../components/SendItScreen";
 
@@ -20,7 +20,7 @@ afterEach(() => {
 
 test("Renders Send Policy", () => {
     act(() => {
-        render(<SendItScreen />, container)
+        render(<SendItScreen />, container);
     });
     expect(screen.getByText("Send Policy")).toBeInTheDocument;
     expect(screen.getByText("No half-sends")).toBeInTheDocument;
@@ -28,7 +28,7 @@ test("Renders Send Policy", () => {
 
 test("Renders Send Image", () => {
     act(() => {
-        render(<SendItScreen />, container)
+        render(<SendItScreen />, container);
     });
     expect(screen.getByAltText("To a zillion and beyond")).toBeInTheDocument;
 });

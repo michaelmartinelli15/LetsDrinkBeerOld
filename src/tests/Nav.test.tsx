@@ -1,8 +1,7 @@
 import React from "react";
-import { render, act, screen, queryByAttribute } from "@testing-library/react";
+import { render, act, screen } from "@testing-library/react";
 import { unmountComponentAtNode } from "react-dom";
 import Nav from "../Nav";
-import { get } from "https";
 
 /* eslint-disable @typescript-eslint/no-explicit-any*/
 
@@ -21,7 +20,7 @@ afterEach(() => {
 
 test("Renders Lets Drink Beer", () => {
     act(() => {
-        render(<Nav degeneracyLevel="test" beerCount={69} />, container)
+        render(<Nav degeneracyLevel="test" beerCount={69} />, container);
     });
     expect(screen.getByText("Lets Drink Beer")).toBeInTheDocument;
 });
