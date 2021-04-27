@@ -8,7 +8,7 @@ export const TableBreaker = (): JSX.Element => {
             <img
                 width="40%"
                 src="https://thumbs.gfycat.com/ActiveGoldenGadwall-small.gif"
-                title="Welcome to the Bills Mafia"
+                alt="Welcome to the Bills Mafia"
             />
         </div>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import { BeerTable, BeerTableProps } from "./BeerTable";
 
 export interface BeerScreenProps {
-    TableProps: BeerTableProps;
+    TableProps: BeerTableProps | null;
 }
 
 export const BeerScreen = ({ TableProps }: BeerScreenProps): JSX.Element => {
@@ -10,7 +10,7 @@ export const BeerScreen = ({ TableProps }: BeerScreenProps): JSX.Element => {
         <div className="screen">
             <h1>Beers</h1>
             <a href="/#/create">Create New</a>
-            <BeerTable {...TableProps} />
+            <BeerTable {...(TableProps as BeerTableProps)} />
         </div>
     );
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Logo from "./images/snowflake.png";
 import { Navbar, Nav } from "react-bootstrap";
 
 interface NavProps {
@@ -19,7 +18,7 @@ const Navigation = ({ degeneracyLevel, beerCount }: NavProps): JSX.Element => {
                     <Nav.Link href="/#/sendIt">Send It</Nav.Link>
                     <Nav.Link href="/#/degeneracyLevel">Degeneracy Level</Nav.Link>
                 </Nav>
-                <Navbar.Text>
+                <Navbar.Text id="degeneracy-text">
                     Degeneracy Level: {degeneracyLevel} | Lifetime Beer Count: {beerCount}
                 </Navbar.Text>
             </Navbar.Collapse>

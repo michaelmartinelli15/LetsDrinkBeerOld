@@ -3,9 +3,11 @@ import { Form, FormControl } from "react-bootstrap";
 import { Beer } from "../../interfaces/IBeer";
 import "../../styling/ComponentStyle.css";
 
+/* eslint-disable @typescript-eslint/no-explicit-any*/
+
 interface DrinkProps {
     beerOfInterest: Beer;
-    beer: Beer[];
+    beer: Beer[] | null;
     setBeer: (value: Beer[]) => void;
     beerCount: number;
     setBeerCount: (value: any) => void;
@@ -16,15 +18,15 @@ export const Drink = ({ beerOfInterest, beer, setBeer, beerCount, setBeerCount }
         console.log(event);
         const count: number = parseInt((document.getElementById("beer-count") as HTMLInputElement).value);
 
-        const index: number = beer.indexOf(beerOfInterest);
+        const index: number | undefined = beer?.indexOf(beerOfInterest);
 
-        if (index >= 0 && count <= beer[index].BeersLeft) {
-            beer[index].TotalDrank += count;
-            beer[index].BeersLeft -= count;
+        if ((index as number) >= 0 && count <= (beer as Beer[])[index as number].BeersLeft) {
+            (beer as Beer[])[index as number].TotalDrank += count;
+            (beer as Beer[])[index as number].BeersLeft -= count;
 
             setBeerCount((beerCount += count));
 
-            setBeer(beer);
+            setBeer(beer as Beer[]);
         } else {
             console.log("Not enough beer");
         }

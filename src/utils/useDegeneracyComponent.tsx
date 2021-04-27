@@ -14,7 +14,7 @@ import { VeryNice } from "../components/DegeneracyComponents/VeryNice";
 export interface DegeneracyProps {
     beerCount: number;
     degeneracyLevel: string;
-    setDegeneracyLevel: React.Dispatch<React.SetStateAction<string>>;
+    setDegeneracyLevel: React.Dispatch<React.SetStateAction<string>> | null;
 }
 
 export const useDegeneracyComponent = (degeneracyLevel: string): JSX.Element => {
@@ -61,42 +61,44 @@ export const updateDegeneractyComponent = ({ beerCount, setDegeneracyLevel }: De
         else return 0;
     };
 
-    switch (calculateDegenCode(beerCount)) {
-        case 0:
-            setDegeneracyLevel("Noob");
-            break;
-        case 69:
-            setDegeneracyLevel("Nice");
-            break;
-        case 1:
-            setDegeneracyLevel("New Guy");
-            break;
-        case 2:
-            setDegeneracyLevel("Super Soft");
-            break;
-        case 3:
-            setDegeneracyLevel("Hot Rod");
-            break;
-        case 4:
-            setDegeneracyLevel("Very Nice");
-            break;
-        case 5:
-            setDegeneracyLevel("Table Breaker");
-            break;
-        case 6:
-            setDegeneracyLevel("Beercules");
-            break;
-        case 7:
-            setDegeneracyLevel("Danger Zone");
-            break;
-        case 8:
-            setDegeneracyLevel("Always Sunny");
-            break;
-        case 9:
-            setDegeneracyLevel("Bluto");
-            break;
-        default:
-            setDegeneracyLevel("");
-            break;
+    if (setDegeneracyLevel) {
+        switch (calculateDegenCode(beerCount)) {
+            case 0:
+                setDegeneracyLevel("Noob");
+                break;
+            case 69:
+                setDegeneracyLevel("Nice");
+                break;
+            case 1:
+                setDegeneracyLevel("New Guy");
+                break;
+            case 2:
+                setDegeneracyLevel("Super Soft");
+                break;
+            case 3:
+                setDegeneracyLevel("Hot Rod");
+                break;
+            case 4:
+                setDegeneracyLevel("Very Nice");
+                break;
+            case 5:
+                setDegeneracyLevel("Table Breaker");
+                break;
+            case 6:
+                setDegeneracyLevel("Beercules");
+                break;
+            case 7:
+                setDegeneracyLevel("Danger Zone");
+                break;
+            case 8:
+                setDegeneracyLevel("Always Sunny");
+                break;
+            case 9:
+                setDegeneracyLevel("Bluto");
+                break;
+            default:
+                setDegeneracyLevel("");
+                break;
+        }
     }
 };

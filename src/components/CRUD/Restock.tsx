@@ -10,7 +10,7 @@ interface RestockProps {
 }
 
 export const Restock = ({ beerOfInterest, beer, setBeer }: RestockProps): JSX.Element => {
-    const updateOnSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const updateOnSubmit = () => {
         const index = beer.indexOf(beerOfInterest);
         const numBoxesToAdd = parseInt((document.getElementById("num-boxes") as HTMLInputElement).value);
         console.log("Adding " + numBoxesToAdd.toString() + " boxes at " + index);
@@ -26,7 +26,7 @@ export const Restock = ({ beerOfInterest, beer, setBeer }: RestockProps): JSX.El
                 How many {beerOfInterest.BoxSize} racks of {beerOfInterest.Name} should I get?
             </h2>
             <div className="form">
-                <Form onSubmit={(e) => updateOnSubmit(e)}>
+                <Form onSubmit={() => updateOnSubmit()}>
                     <Form.Label>How many boxes?</Form.Label>
                     <FormControl type="text" placeholder="69" className="mr-sm-2" id="num-boxes" />
                     <button className="mr-sm-2" type="submit">
