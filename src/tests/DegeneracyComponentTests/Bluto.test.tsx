@@ -1,5 +1,5 @@
 import React from "react";
-import { render, act, screen, queryByAttribute } from "@testing-library/react";
+import { render, act, screen } from "@testing-library/react";
 import { unmountComponentAtNode } from "react-dom";
 import { Bluto } from "../../components/DegeneracyComponents/Bluto";
 
