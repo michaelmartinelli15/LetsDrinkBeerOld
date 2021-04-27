@@ -23,4 +23,5 @@ test("Renders Danger Zone", () => {
         render(<DangerZone />, container);
     });
     expect(screen.getByText("Danger Zone")).toBeInTheDocument;
+    expect(screen.getByTestId("danger-zone-frame")).toBeInTheDocument;
 });

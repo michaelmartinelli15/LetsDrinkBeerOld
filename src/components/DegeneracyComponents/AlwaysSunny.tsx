@@ -15,11 +15,13 @@ export const AlwaysSunny = (): JSX.Element => {
             <br />
             <br />
 
-            <ReactAudioPlayer
-                src="https://www.redringtones.com/wp-content/uploads/2018/10/its-always-sunny-in-philadelphia-theme-song.mp3"
-                autoPlay
-                controls
-            />
+            <div data-testid="always-sunny-audio">
+                <ReactAudioPlayer
+                    src="https://www.redringtones.com/wp-content/uploads/2018/10/its-always-sunny-in-philadelphia-theme-song.mp3"
+                    autoPlay
+                    controls
+                />
+            </div>
         </div>
     );
 };

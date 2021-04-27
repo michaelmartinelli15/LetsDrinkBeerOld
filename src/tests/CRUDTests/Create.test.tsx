@@ -1,7 +1,7 @@
 import React from "react";
 import { render, act, screen } from "@testing-library/react";
 import { unmountComponentAtNode } from "react-dom";
-import { AlwaysSunny } from "../../components/DegeneracyComponents/AlwaysSunny";
+import { Create } from "../../components/CRUD/Create";
 
 /* eslint-disable @typescript-eslint/no-explicit-any*/
 
@@ -18,12 +18,11 @@ afterEach(() => {
     container.remove();
 });
 
-test("Renders Always Sunny", () => {
+test("Renders Create Screen", () => {
     act(() => {
-        render(<AlwaysSunny />, container);
+        render(<Create beer={null} setBeer={null} />, container);
     });
-    expect(screen.getByText("Always Sunny")).toBeInTheDocument;
-    expect(screen.getByText("The Gang Beats Boggs")).toBeInTheDocument;
-    expect(screen.getByAltText("The Gang Beats Boggs")).toBeInTheDocument;
-    expect(screen.getByTestId("always-sunny-audio")).toBeInTheDocument;
+    expect(screen.getAllByText("Create")).toBeInTheDocument;
+    expect(screen.getByTestId("create-form")).toBeInTheDocument;
+    expect(screen.getByTestId("create-button")).toBeInTheDocument;
 });

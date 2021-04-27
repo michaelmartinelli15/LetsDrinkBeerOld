@@ -37,8 +37,8 @@ export const BeerTable = ({ setBeerOfInterest, beer, setBeer }: BeerTableProps):
     if (beer) {
         return (
             <div className="beer-table">
-                <Table striped bordered hover size="md">
-                    <thead>
+                <Table striped bordered hover size="md" data-testid="table">
+                    <thead data-testid="table-header">
                         <tr>
                             <th>Name</th>
                             <th>Container</th>
