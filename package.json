@@ -29,7 +29,7 @@
     "typescript": "tsc --noEmit",
     "format": "prettier --write {src/**/*.{ts,tsx},src/styling/*.css}",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
