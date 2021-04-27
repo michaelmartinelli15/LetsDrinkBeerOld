@@ -1,0 +1,51 @@
+.screen {
+    height: 90vh;
+    align-content: center;
+}
+
+.beer-table {
+    margin: 2vh;
+}
+
+.degeneracy-image {
+    max-width: 69%;
+    width: max-content;
+}
+
+.form {
+    max-width: 20%;
+    display: block;
+}
+
+.mr-sm-2 {
+    margin: 2vh;
+}
+
+.paragraph {
+    margin: 5%;
+}
+
+.contributer-picture {
+    width: 100%;
+    height: auto;
+}
+
+.contributer-bio {
+    margin-top: 5%;
+}
+
+.large-font {
+    font-size: 40px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: max-content;
+    max-height: 10vh;
+    text-align: center;
+    font-size: x-small;
+    border-color: green;
+  }

@@ -1,0 +1,15 @@
+{
+  "short_name": "Lets Drink Beer",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "snowflake.png",
+      "type": "image/png",
+      "sizes": "1600x1600"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
