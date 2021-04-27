@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/LetsDrinkBeer/static/css/main.301bc787.chunk.css",
+    "main.js": "/LetsDrinkBeer/static/js/main.33cca03f.chunk.js",
+    "main.js.map": "/LetsDrinkBeer/static/js/main.33cca03f.chunk.js.map",
+    "runtime-main.js": "/LetsDrinkBeer/static/js/runtime-main.686dc7d7.js",
+    "runtime-main.js.map": "/LetsDrinkBeer/static/js/runtime-main.686dc7d7.js.map",
+    "static/css/2.150d169a.chunk.css": "/LetsDrinkBeer/static/css/2.150d169a.chunk.css",
+    "static/js/2.d943d0ad.chunk.js": "/LetsDrinkBeer/static/js/2.d943d0ad.chunk.js",
+    "static/js/2.d943d0ad.chunk.js.map": "/LetsDrinkBeer/static/js/2.d943d0ad.chunk.js.map",
+    "static/js/3.04cdc883.chunk.js": "/LetsDrinkBeer/static/js/3.04cdc883.chunk.js",
+    "static/js/3.04cdc883.chunk.js.map": "/LetsDrinkBeer/static/js/3.04cdc883.chunk.js.map",
+    "index.html": "/LetsDrinkBeer/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/LetsDrinkBeer/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.301bc787.chunk.css.map": "/LetsDrinkBeer/static/css/main.301bc787.chunk.css.map",
+    "static/js/2.d943d0ad.chunk.js.LICENSE.txt": "/LetsDrinkBeer/static/js/2.d943d0ad.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.686dc7d7.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.d943d0ad.chunk.js",
+    "static/css/main.301bc787.chunk.css",
+    "static/js/main.33cca03f.chunk.js"
+  ]
+}
