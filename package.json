@@ -29,7 +29,7 @@
     "typescript": "tsc --noEmit",
     "format": "prettier --write {src/**/*.{ts,tsx},src/styling/*.css}",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -60,5 +60,6 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "gh-pages": "^3.1.0",
     "prettier": "^2.2.1"
-  }
+  },
+  "homepage": "https://michaelmartinelli15.github.io/LetsDrinkBeer/"
 }
