@@ -25,9 +25,16 @@ test("Renders Title (Beers)", () => {
     expect(screen.getByText("Beers")).toBeInTheDocument;
 });
 
-// test("Renders Create New Link", () => {
-//     act(() => {
-//         render(<BeerScreen TableProps={null} />, container)
-//     });
-//     expect(screen.getByText("Creat New")).toBeInTheDocument;
-// });
+test("Renders Create New Link", () => {
+    act(() => {
+        render(<BeerScreen TableProps={null} />, container);
+    });
+    expect(screen.getByTestId("create-new-link")).toBeInTheDocument;
+});
+
+test("Renders Beer Table", () => {
+    act(() => {
+        render(<BeerScreen TableProps={null} />, container);
+    });
+    expect(screen.getByTestId("beer-table")).toBeInTheDocument;
+});

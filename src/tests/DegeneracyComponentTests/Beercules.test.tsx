@@ -23,4 +23,5 @@ test("Renders Beercules", () => {
         render(<Beercules />, container);
     });
     expect(screen.getByText("Beercules")).toBeInTheDocument;
+    expect(screen.getByTestId("beercules-frame")).toBeInTheDocument;
 });

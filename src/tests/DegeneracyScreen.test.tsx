@@ -111,6 +111,7 @@ test("Renders Beercules", () => {
         render(<DegeneracyScreen {...props} />, container);
     });
     expect(screen.getByText("Beercules")).toBeInTheDocument;
+    expect(screen.getByTestId("beercules-frame")).toBeInTheDocument;
 });
 
 test("Renders Danger Zone", () => {
@@ -123,6 +124,7 @@ test("Renders Danger Zone", () => {
         render(<DegeneracyScreen {...props} />, container);
     });
     expect(screen.getByText("Danger Zone")).toBeInTheDocument;
+    expect(screen.getByTestId("danger-zone-frame")).toBeInTheDocument;
 });
 
 test("Renders Always Sunny", () => {

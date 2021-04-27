@@ -52,7 +52,7 @@ const App = (): JSX.Element => {
 
     const [beerData, setBeerData] = useLocalStorage("myBeers", defaultBeer);
     const [lifetimeBeerCount, setLifetimeBeerCount] = useLocalStorage("lifetimeBeerCount", 0);
-    const [degeneracyLevel, setDegeneracyLevel] = useState<string>("Bluto");
+    const [degeneracyLevel, setDegeneracyLevel] = useState<string>("");
     const [beerOfInterest, setbeerOfInterest] = useState<Beer>(emptyBeer);
 
     const tableProps: BeerTableProps = {
